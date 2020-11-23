@@ -713,8 +713,21 @@ template {
     width: 88%;
   }
   .navbar-top {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 18px;
+    padding-bottom: 30px;
+  }
+  .hotel {
+    padding-top: 5px;
+  }
+  .hotel-info__description {
+    margin: 0;
+  }
+  .hotel-info__offer {
+    margin-top: 7px;
+  }
+  .breadcrumb-list {
+    padding-top: 18px;
+    padding-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
