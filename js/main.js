@@ -1,4 +1,10 @@
 var mySwiper = new Swiper('.swiper-container', {
+  //Keyboard control
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+  
   // Optional parameters
   direction: 'horizontal',
   loop: true,
