@@ -622,7 +622,7 @@ template {
   left: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 50;
+  z-index: 10;
 }
 
 .slider {
@@ -638,11 +638,11 @@ template {
   width: 30px;
   height: 30px;
   border: none;
-  background-color: blue;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
+  background-color: transparent;
 }
 
 .slider-button--next {
