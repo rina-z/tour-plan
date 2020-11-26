@@ -11,7 +11,7 @@
         object-fit: cover
 
 @media (max-width: 992px)
-  .container 
+  .container,
     max-width: 700px
   .logo
     width: 132px
@@ -43,6 +43,9 @@
     width: 100%
   .map
     width: 340px
+  .newsletter
+    &-wrapper
+      width: 700px
 @media (max-width: 767px)
   .container 
     max-width: 576px
@@ -98,6 +101,12 @@
     width: 100%
   .stars
     flex-basis: auto
+  .newsletter
+    &-wrapper
+      flex-direction: column
+      max-width: 576px
+      width: 88%
+      align-items: flex-start
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -131,7 +140,45 @@
     padding: 29px 23px
   .map
     height: 173px
+  .newsletter
+    padding: 76px 0 83px 0
+    &__title
+      margin-bottom: 37px
+    &-title
+      font-family: Mulish
+      font-style: normal
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-family: Mulish
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 38px
+        text-transform: uppercase
+    &-wrapper
+      width: 88%
+      max-width: 280px
+      flex-direction: column
+      align-items: flex-start
 
+  .subscribe
+    position: relative
+    width: 280px
+    height: 55px
+    border-radius: 4px
+    overflow: hidden
+    &__input
+      position: absolute
+      font-family: Mulish
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 18px
+      padding-left: 20px
+      padding-right: 75px
+    
 
   
 
