@@ -45,6 +45,11 @@
   .newsletter
     &-wrapper
       width: 700px
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+
 @media (max-width: 767px)
   .container 
     max-width: 576px
@@ -104,6 +109,11 @@
       max-width: 576px
       width: 88%
       align-items: flex-start
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -115,6 +125,7 @@
       padding-bottom: 30px 
   .hotel 
     padding-top: 5px
+    padding-bottom: 45px
     &-info
       margin-bottom: 12px
       &__description
@@ -137,7 +148,7 @@
   .map
     height: 173px
   .newsletter
-    padding: 76px 0 83px 0
+    padding: 56px 0 83px 0
     &__title
       margin-bottom: 37px
     &-title
@@ -146,13 +157,14 @@
       font-weight: 300
       font-size: 20px
       line-height: 25px
-      &__strong
-        font-family: Mulish
-        font-style: normal
-        font-weight: 600
-        font-size: 30px
-        line-height: 38px
-        text-transform: uppercase
+    &__strong
+      font-family: Mulish
+      font-style: normal
+      font-weight: 600
+      font-size: 30px
+      line-height: 38px
+      text-transform: uppercase
+      margin-top: 5px
     &-wrapper
       width: 88%
       max-width: 280px
@@ -174,6 +186,47 @@
       line-height: 18px
       padding-left: 20px
       padding-right: 75px
+
+  .reviews
+    padding: 27px 0 70px 0
+    &-slider
+      &__item
+        padding: 0 30px 30px
+        &::after
+          display: none
+        &::before
+          display: none
+      &__button
+        top: 45px
+        &--prev
+          left: 48%
+          margin-left: -100px
+          transform: translateY(-50%, 0)
+        &--next
+          right: 50%
+          margin-right: -100px
+          transform: translateY(-50%, 0)
+      &__text
+        font-family: Mulish
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 160%
+        color: #333333
+        margin-top: 5px
+    &__title
+      font-family: Mulish
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-align: center
+      text-transform: uppercase
+      margin-bottom: 42px
+      padding-right: 38px
+      padding-left: 38px
+
+      
     
 
   
