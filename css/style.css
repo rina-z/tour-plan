@@ -922,10 +922,15 @@ template {
   background-color: #EC1F46;
   color: #ffffff;
   min-width: 65px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .reviews {
-  padding: 10px 0 70px 0;
+  padding: 10px 0 30px 0;
 }
 
 .reviews__title {
@@ -1067,6 +1072,96 @@ template {
   margin: auto;
 }
 
+.activities {
+  padding: 45px 0 98px 0;
+}
+
+.activities__title {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 57px;
+}
+
+.activities-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 24px 26px;
+  width: 255px;
+  height: 255px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: linear-gradient(179.83deg, rgba(196, 196, 196, 0) 35.34%, #0A223D 99.85%);
+}
+
+.card__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -2;
+}
+
+.card__title {
+  margin-top: auto;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__button {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ffffff;
+  padding: 7px 22px;
+  border: none;
+  background-color: #EC1F46;
+  border-radius: 4px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -1079,6 +1174,10 @@ template {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .card {
+    width: 230px;
+    height: 230px;
   }
 }
 
@@ -1094,18 +1193,28 @@ template {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
-    padding-top: 22px;
+    padding-top: 24px;
     padding-bottom: 22px;
+    padding-left: 15px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14px;
+    text-transform: uppercase;
   }
   .navbar-menu__link {
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 11px;
+    line-height: 14px;
   }
   .search__input {
     width: 340px;
+  }
+  .hotel {
+    padding-bottom: 60px;
   }
   .hotel-grid {
     -webkit-box-orient: vertical;
@@ -1129,11 +1238,48 @@ template {
   .map {
     width: 340px;
   }
+  .newsletter {
+    padding: 70px 0 70px 0;
+  }
   .newsletter-wrapper {
     width: 700px;
   }
   .reviews-slider__item {
     max-width: 580px;
+  }
+  .reviews-slider__button {
+    top: 43%;
+  }
+  .reviews-slider__button--prev {
+    left: 2px;
+  }
+  .reviews-slider__button--next {
+    right: 2px;
+  }
+  .reviews__title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-bottom: 50px;
+  }
+  .activities {
+    padding: 15px 0 98px 0;
+  }
+  .activities-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 340px;
+    height: 255px;
   }
 }
 
@@ -1234,6 +1380,17 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .reviews-slider__button--prev {
+    left: 10px;
+  }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .card {
+    width: 49%;
+    height: 255px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1283,7 +1440,7 @@ template {
     height: 173px;
   }
   .newsletter {
-    padding: 56px 0 83px 0;
+    padding: 56px 0 73px 0;
   }
   .newsletter__title {
     margin-bottom: 37px;
@@ -1333,7 +1490,7 @@ template {
     padding-right: 75px;
   }
   .reviews {
-    padding: 27px 0 70px 0;
+    padding: 27px 0 30px 0;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1379,6 +1536,19 @@ template {
     margin-bottom: 42px;
     padding-right: 38px;
     padding-left: 38px;
+  }
+  .activities {
+    padding: 15px 0 98px 0;
+  }
+  .activities__title {
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .card {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
