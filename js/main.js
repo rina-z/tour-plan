@@ -35,7 +35,9 @@ var reviewSlider = new Swiper('.reviews-slider', {
     prevEl: '.reviews-slider__button--prev',
     nextEl: '.reviews-slider__button--next',
     
-  },
+  }, 
 
 
 });
+
+var rellax = new Rellax(".rellax");
