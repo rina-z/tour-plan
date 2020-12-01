@@ -94,13 +94,12 @@
     &-wrapper
       grid-template-columns: repeat(6,  1fr)
       grid-row-gap: 50px
-      margin-bottom: 30px
+      margin-bottom: 62px
     &__input
       display: flex
       flex-direction: row
       flex-wrap: nowrap
-      
-      width: 255px
+      flex-basis: 47%
     &__message
       width: 539px
       height: 123px
@@ -130,16 +129,20 @@
     &__contacts
       &-form
         grid-row: 4
-        grid-column: span 5
+        grid-column: span 6
+        max-width: 539px
     &__title
       &--cont
         margin-top: 15px
         margin-bottom: 25px
+      &--inline
+        margin-top: 15px
       &--send
-        margin-bottom: 40px
+        margin-bottom: 32px
     &__item
       &--cont
-        margin-bottom: 15px
+        margin-bottom: 18px
+        line-height: 150% 
     &-conditions
       justify-content: space-between
       &__ul
@@ -223,13 +226,14 @@
       flex-basis: 100%
     &__categories
       grid-row: 2/3
-      min-width: 150px
+      min-width: 120px
     &__additional
-      grid-column: span 5
-      min-width: 220px
+      grid-column: span 4
+      min-width: 200px
     &__legal
+      min-width: 140px
       
-      min-width: 150px
+
 
 
 @media (max-width: 576px)
@@ -367,17 +371,22 @@
   .footer
     &-wrapper
       grid-template-columns: 1fr
-      grid-row-gap: 15px
+      grid-row-gap: 25px
+      margin-bottom: 30px
     &__logo
       grid-row: 1
       grid-column: 1
+      margin-bottom: 10px
     &__social
-      display: flex
-      flex-wrap: wrap
       &-network
         grid-row: 2
         grid-column: 1
-        justify-self: start
+        display: flex
+        flex-direction: column
+        align-items: start
+    &__item
+      &--cont
+        margin-bottom: 25px
     &__legal
       grid-row: 3
       grid-column: 1
@@ -400,15 +409,38 @@
         max-width: 281px
         grid-row: 7
         grid-column: 1
-    &__credit-cards
-      display: none
+
     &-conditions
       &__item
         margin-right: 8px
-    &__button
-      order: -1
+    &__required
+      flex-direction: column
     &__text
-    
+      margin-top: 28px
+    &__info
+      margin-bottom: 20px
+    &__title
+      margin-bottom: 18px
+      &--send
+        margin-top: 10px
+    &__icon
+      &-wrapper
+        min-width: 30px
+        margin-left: 0
+    &__message
+      margin-bottom: 12px
+    &__info
+      margin-bottom: 16px
+    &__conditions
+      display: flex
+      flex-wrap: wrap
+    &-conditions
+      &__ul
+        margin-bottom: 10px
+    &__button
+      flex-basis: 50%
+      order: 2
+      max-width: 160px
      
 
       
