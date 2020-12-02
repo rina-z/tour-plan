@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="" class="logo">
@@ -26,7 +26,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form
+            action="#"
+            class="search navbar__search navbar__search--mobile--hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -37,13 +40,13 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img
               src="img/user-avatar.jfif"
               alt="Avatar:Nathan"
               class="user__avatar"
             />
-            <span class="user__name">Nathan</span>
+            <span class="user__name user__name--light">Nathan</span>
           </a>
           <!-- /.user -->
           <button class="menu-button navbar-top__menu-button">
@@ -58,6 +61,34 @@
       <div class="navbar-bottom">
         <div class="container">
           <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <a
+                href="#"
+                class="user navbar__user navbar__user--mobile--visible"
+              >
+                <img
+                  src="img/user-avatar.jfif"
+                  alt="Avatar:Nathan"
+                  class="user__avatar"
+                />
+                <span class="user__name">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile--visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search--mobile--visible"
+              >
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search Location"
+                />
+                <button class="search__button">
+                  <img src="img/search-icon.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -568,7 +599,9 @@
                 <a href="#" class="footer__link">Deals.mu loyalty program </a>
               </li>
               <li class="footer__item">
-                <a href="#" class="footer__link">Promote your Business on BTP</a>
+                <a href="#" class="footer__link"
+                  >Promote your Business on BTP</a
+                >
               </li>
             </ul>
           </div>
@@ -616,10 +649,10 @@
               <li class="footer__item footer__item--cont">
                 <div class="footer__icon-wrapper">
                   <img
-                  class="footer__icon"
-                  src="img/map-icon.svg"
-                  alt="Icon: Map"
-                />
+                    class="footer__icon"
+                    src="img/map-icon.svg"
+                    alt="Icon: Map"
+                  />
                 </div>
                 <!-- /.footer__icon-wrapper -->
 
@@ -675,7 +708,9 @@
               ></textarea>
 
               <div class="footer__required">
-                <button type="submit" class="button footer__button">Send</button>
+                <button type="submit" class="button footer__button">
+                  Send
+                </button>
                 <span class="footer__info">* Required Fields</span>
               </div>
             </form>
@@ -685,11 +720,23 @@
         <!-- /.footer-wrapper -->
         <div class="footer-conditions footer__conditions">
           <ul class="footer-conditions__ul">
-            <li class="footer-conditions__item"><a href="#" class="footer-conditions__link">Disclaimer</a></li>
-            <li class="footer-conditions__item"><a href="#" class="footer-conditions__link"> Conditions of use</a></li>
-            <li class="footer-conditions__item"><a href="#" class="footer-conditions__link">Cancellation policy</a></li>
+            <li class="footer-conditions__item">
+              <a href="#" class="footer-conditions__link">Disclaimer</a>
+            </li>
+            <li class="footer-conditions__item">
+              <a href="#" class="footer-conditions__link"> Conditions of use</a>
+            </li>
+            <li class="footer-conditions__item">
+              <a href="#" class="footer-conditions__link"
+                >Cancellation policy</a
+              >
+            </li>
           </ul>
-          <img src="img/credit-cards.png" alt="Credit cards" class="footer__credit-cards">
+          <img
+            src="img/credit-cards.png"
+            alt="Credit cards"
+            class="footer__credit-cards"
+          />
         </div>
         <!-- /.conditions -->
       </div>
