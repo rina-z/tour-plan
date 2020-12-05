@@ -112,24 +112,28 @@
     &__social
       &-network
         grid-row: 1/2
-        grid-column: span 6
+        grid-column: span 10
+      &-links
+        margin-top: 20px
+
     &__categories
       grid-row: 2/3
       min-width: 162px
     &__additional
       grid-column: span 4
       min-width: 260px
+     
     &__legal
-      justify-self: end
+      grid-column-start: 11
       min-width: 202px
     &__contact
       &-details
         grid-row: 3
-        grid-column: span 6
+        grid-column: span 11
     &__contacts
       &-form
         grid-row: 4
-        grid-column: span 6
+        grid-column: span 11
         max-width: 539px
     &__title
       &--cont
@@ -152,6 +156,9 @@
 @media (max-width: 767px)
   body
     padding-top: 60px
+    &__block
+      display: flex
+      overflow: hidden
   .container 
     max-width: 576px
     width: 88%
@@ -193,6 +200,8 @@
         &--mobile
           &--visible
             display: block
+    &__scroll
+        overflow: scroll
   .user
     &__name
       color: $light
@@ -410,7 +419,7 @@
       padding-right: 38px
       padding-left: 38px
   .activities
-    padding: 15px 0 98px 0
+    padding: 15px 0 45px 0
     &__title
       font-family: Mulish
       font-style: normal
@@ -431,6 +440,7 @@
     &__image
       height: 255px
   .footer
+    padding-top: 65px
     &-wrapper
       grid-template-columns: 1fr
       grid-row-gap: 25px
@@ -438,7 +448,7 @@
     &__logo
       grid-row: 1
       grid-column: 1
-      margin-bottom: 10px
+      
     &__social
       &-network
         grid-row: 2
@@ -477,6 +487,7 @@
         margin-right: 8px
     &__required
       flex-direction: column
+      align-items: start
     &__text
       margin-top: 28px
     &__info
@@ -485,6 +496,8 @@
       margin-bottom: 18px
       &--send
         margin-top: 10px
+      &--inline
+        margin-bottom: 5px
     &__icon
       &-wrapper
         min-width: 30px
