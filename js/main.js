@@ -1,49 +1,71 @@
-var hotelSlider = new Swiper('.hotel-slider', {
-  //Keyboard control
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
 
-  // Navigation arrows
-  navigation: {
-    prevEl: '.hotel-slider__button--prev',
-    nextEl: '.hotel-slider__button--next',
+
+  var hotelSlider = new Swiper('.hotel-slider', {
+    //Keyboard control
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     
-  },
-
-
-});
-
-var reviewSlider = new Swiper('.reviews-slider', {
-  //Keyboard control
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
   
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
-
-  // Navigation arrows
-  navigation: {
-    prevEl: '.reviews-slider__button--prev',
-    nextEl: '.reviews-slider__button--next',
+    // Navigation arrows
+    navigation: {
+      prevEl: '.hotel-slider__button--prev',
+      nextEl: '.hotel-slider__button--next',
+      
+    },
+  
+  
+  });
+  
+  var reviewSlider = new Swiper('.reviews-slider', {
+    //Keyboard control
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     
-  }, 
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // Navigation arrows
+    navigation: {
+      prevEl: '.reviews-slider__button--prev',
+      nextEl: '.reviews-slider__button--next',
+      
+    }, 
+  
+  
+  });
+  
+  var menuButton = $(".menu-button");
+  menuButton .on('click', function () {
+    $(".navbar-bottom").toggleClass('navbar-bottom--visible')
+    $("body").toggleClass('body__block')
+  } );
+  
+  var modalButton = $('[data-toggle=modal]');
+  var closeModalButton = $('[modal__close]');
+  modalButton.on("click", openModal);
+  closeModalButton.on("click", closeModal);
 
+  function openModal () {
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.addClass('modal__overlay--visible');
+    modalDialog.addClass('modal__dialog--visible');
+  };
 
-});
-
-var menuButton = document.querySelector(".menu-button");
-menuButton .addEventListener('click', function () {
-  document.querySelector(".navbar-bottom").classList.toggle('navbar-bottom--visible')
-  document.querySelector("body").classList.toggle('body__block')
-} )
-
+  function closeModal (event) {
+    event.preventDefault();
+    var modalOverlay = $('.modal__overlay');
+    var modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay--visible');
+    modalDialog.removeClass('modal__dialog--visible');
+    
+  };
 
