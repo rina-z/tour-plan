@@ -22,15 +22,16 @@ $body = "
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $mail->isSMTP();   
+    $mail->SMTPKeepAlive = true;
+     
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+// $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'a0686932165@gmail.com'; // Логин на почте
+    $mail->Username   = 'a0686932165'; // Логин на почте
     $mail->Password   = 'linden__00'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
@@ -55,4 +56,4 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+header('Location: thankyou.html');
