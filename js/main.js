@@ -68,4 +68,29 @@
     modalDialog.removeClass('modal__dialog--visible');
     
   };
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+         required: "Please specify your name"
+        },
+
+        phone: {
+          required:"Please specify your phone number"
+        },
+        
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        
+      }
+    });
+  });
+  
+  $(document).ready(function(){
+    $('.call').mask("+7(999)999-9999"); 
+  });
+
 

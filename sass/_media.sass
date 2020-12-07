@@ -14,7 +14,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 
 @media (max-width: 992px)
   .container,
@@ -96,10 +97,11 @@
       grid-row-gap: 50px
       margin-bottom: 62px
     &__input
-      display: flex
-      flex-direction: row
-      flex-wrap: nowrap
-      flex-basis: 47%
+      &-group
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        flex-basis: 47%
     &__message
       width: 539px
       height: 123px
@@ -287,7 +289,8 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__categories
       grid-row: 2/3
       min-width: 120px
@@ -302,7 +305,8 @@
       overflow: auto
       max-height: 100%
     &__input
-      height: 40px
+      &-group
+        height: 40px
     &__message
       height: 60px
     &__button
@@ -390,14 +394,15 @@
     border-radius: 4px
     overflow: hidden
     &__input
-      position: absolute
-      font-family: Mulish
-      font-style: normal
-      font-weight: 300
-      font-size: 14px
-      line-height: 18px
-      padding-left: 20px
-      padding-right: 75px
+      &-group
+        position: absolute
+        font-family: Mulish
+        font-style: normal
+        font-weight: 300
+        font-size: 14px
+        line-height: 18px
+        padding-left: 20px
+        padding-right: 75px
 
   .reviews
     padding: 27px 0 30px 0
@@ -539,8 +544,10 @@
     &__dialog
       padding: 10px 20px
       max-height: 100%
+      width: 90%
     &__input
-      margin-bottom: 10px
+      &-group
+        margin-bottom: 10px
     &__message
       margin-bottom: 10px
 
