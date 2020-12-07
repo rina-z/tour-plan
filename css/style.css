@@ -693,6 +693,17 @@ template {
   z-index: 10;
 }
 
+.hotel__back-link {
+  font-size: 15px;
+  line-height: 13px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hotel__feedback {
+  margin-bottom: 20px;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
