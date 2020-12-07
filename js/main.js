@@ -74,6 +74,7 @@
       messages: {
         name: {
          required: "Please specify your name"
+
         },
 
         phone: {

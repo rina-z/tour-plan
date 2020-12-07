@@ -18,6 +18,7 @@ $body = "
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
 <b>Сообщение:</b><br>$message
+<b>Почта:</b><br>$email
 ";
 
 // Настройки PHPMailer
