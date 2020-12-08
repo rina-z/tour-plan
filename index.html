@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -21,7 +22,7 @@
     <header class="navbar navbar__mobile navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="" class="logo">
+          <a href="https://rinaus.ru/tour-plan" class="logo">
             <img
               src="img/horizontal-logo.svg"
               alt="Logo: Best tour plan"
@@ -305,11 +306,11 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2 class="reviews__title" data-aos="fade-down">What people think about us</h2>
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="reviews-slider__item">
+              <div class="reviews-slider__item " data-aos="fade-right">
                 <div class="reviews-slider__profile">
                   <img
                     src="img/user-avatar-1.jfif"
@@ -364,7 +365,7 @@
             </div>
             <!--swiper-slide-->
             <div class="swiper-slide">
-              <div class="reviews-slider__item">
+              <div class="reviews-slider__item" data-aos="fade-left">
                 <div class="reviews-slider__profile">
                   <img
                     src="img/user-avatar-2.jfif"
@@ -423,7 +424,7 @@
             </div>
             <!--swiper-slide-->
             <div class="swiper-slide">
-              <div class="reviews-slider__item">
+              <div class="reviews-slider__item " data-aos="fade-right">
                 <div class="reviews-slider__profile">
                   <img
                     src="img/user-avatar-3.jfif"
@@ -496,7 +497,7 @@
     </section>
     <section class="activities">
       <div class="container">
-        <h2 class="activities__title">Other Activities</h2>
+        <h2 class="activities__title" data-aos="fade-down">Other Activities</h2>
         <div class="activities-wrapper">
           <div class="card activities__card activities__card--1">
             <img
@@ -560,7 +561,7 @@
             class="logo footer__logo"
           />
           <div class="footer__list footer__categories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title" data-aos="fade-down">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">All Deals </a>
@@ -590,7 +591,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title " data-aos="fade-down">ADDITIONAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us </a>
@@ -616,7 +617,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__social-network">
-            <h3 class="footer__title footer__title--inline">Social Network</h3>
+            <h3 class="footer__title footer__title--inline" data-aos="fade-down">Social Network</h3>
             <div class="footer__social-links">
               <a href="#" class="footer__link"
                 ><img src="img/fb.svg" alt="Icon:Facebook"
@@ -632,7 +633,7 @@
           </div>
           <!-- /.footer__social-network -->
           <div class="footer__list footer__legal">
-            <h3 class="footer__title">LEGAL INFORMATION</h3>
+            <h3 class="footer__title" data-aos="fade-down">LEGAL INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">Terms & Conditions </a>
@@ -650,7 +651,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--cont">Contact Details</h3>
+            <h3 class="footer__title footer__title--cont" data-aos="fade-down">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -676,11 +677,17 @@
                     alt="Icon: Phone call"
                   />
                 </div>
+                <div class="footer__tel">
+                  Tel (business hours) : <a href="tel:2691500" class="footer__phone-number">269 1500</a>
+                   <br />
+                  Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="footer__phone-number">52-56-61-38</a>
+                   (08:00 am – 20:00
+                  pm) <br />
+                  Tel (hotline) Sunday:<a href="tel:52566138" class="footer__phone-number">52-56-61-38</a>
+                   (08:00 am – 14:00 pm) <br />
+                </div>
 
-                Tel (business hours) : 269 1500 <br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm) <br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm) <br />
+
               </li>
               <li class="footer__item footer__item--cont">
                 <div class="footer__icon-wrapper">
@@ -690,14 +697,14 @@
                     alt="Icon: Email "
                   />
                 </div>
-
-                cherly.lawson@example.com
+                  <a href="mailto:cherly.lawson@example.com" class="footer__email">cherly.lawson@example.com</a>
+                
               </li>
             </ul>
           </div>
           <!--footer__contact-details-->
           <div class="footer__contacts-form">
-            <h3 class="footer__title footer__title--send">Send us a message</h3>
+            <h3 class="footer__title footer__title--send" data-aos="fade-down">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
@@ -813,6 +820,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -78,7 +78,8 @@
         },
 
         phone: {
-          required:"Please specify your phone number"
+          required:"Please specify your phone number",
+          minlength: "Please specify your full phone number "
         },
         
         email: {
@@ -94,4 +95,5 @@
     $('.call').mask("+7(999)999-9999"); 
   });
 
+  AOS.init();
 
