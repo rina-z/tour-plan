@@ -60,7 +60,7 @@
     modalDialog.addClass('modal__dialog--visible');
   };
 
-  function closeModal (event) {
+  function closeModal(event) {
     event.preventDefault();
     var modalOverlay = $('.modal__overlay');
     var modalDialog = $('.modal__dialog');

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    
   </head>
   <body>
     <header class="navbar navbar__mobile navbar__mobile--fixed">
@@ -38,7 +39,7 @@
               class="search__input search__input--text"
               placeholder="Search Location"
             />
-            <button class="search__button">
+            <button class="search__button ">
               <img src="img/search-icon.svg" alt="Icon: search" />
             </button>
           </form>
@@ -275,6 +276,7 @@
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
+                loading="lazy"
               ></iframe>
             </div>
             <!-- /.map -->
@@ -368,7 +370,7 @@
               <div class="reviews-slider__item" data-aos="fade-left">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/user-avatar-2.jfif"
+                    src="img/user-avatar-2.jpg"
                     alt="Jane Doy"
                     class="reviews-slider__avatar"
                   />
@@ -427,7 +429,7 @@
               <div class="reviews-slider__item " data-aos="fade-right">
                 <div class="reviews-slider__profile">
                   <img
-                    src="img/user-avatar-3.jfif"
+                    src="img/user-avatar-3.jpg"
                     alt="John Doy"
                     class="reviews-slider__avatar"
                   />
@@ -555,11 +557,15 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
+         <a href="https://rinaus.ru/tour-plan" class=" footer__logo">
           <img
             src="img/logo-vertical.svg"
             alt="Best tour plan"
             class="logo footer__logo"
           />
+         </a>
+
+      
           <div class="footer__list footer__categories">
             <h3 class="footer__title" data-aos="fade-down">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -619,14 +625,14 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline" data-aos="fade-down">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
-                ><img src="img/fb.svg" alt="Icon:Facebook"
+              <a href="https://www.facebook.com/" class="footer__link" target="_blank"
+                ><img src="img/fb.svg" alt="Icon:Facebook" 
               /></a>
-              <a href="#" class="footer__link"
-                ><img src="img/yt.svg" alt="Icon:Youtube"
+              <a href="https://www.youtube.com/" class="footer__link" target="_blank"
+                ><img src="img/yt.svg" alt="Icon:Youtube"  
               /></a>
-              <a href="#" class="footer__link"
-                ><img src="img/inst.svg" alt="Icon: Instagram"
+              <a href="https://twitter.com/" class="footer__link" target="_blank"
+                ><img src="img/inst.svg" alt="Icon: Instagram" 
               /></a>
             </div>
             <!-- /.footer__social-links -->
@@ -735,7 +741,7 @@
               ></textarea>
 
               <div class="required footer__required">
-                <button type="submit" class="button footer__button">
+                <button type="submit" class="button footer__button ">
                   Send
                 </button>
                 <span class="footer__info">* Required Fields</span>
@@ -773,7 +779,7 @@
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="" class="modal__close">
+        <a href="" class="modal__close" >
           <img src="img/close-button.svg" alt="Icon: close" />
         </a>
         <h3 class="modal__title modal__title--send">Booking</h3>
@@ -808,7 +814,7 @@
           ></textarea>
 
           <div class="required modal__required">
-            <button type="submit" class="button modal__button">Send</button>
+            <button type="submit" class="button modal__button ">Send</button>
             <span class="modal__info">* Required Fields</span>
           </div>
         </form>
